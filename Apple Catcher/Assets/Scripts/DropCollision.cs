@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DropCollision : MonoBehaviour
 {
@@ -40,12 +41,7 @@ public class DropCollision : MonoBehaviour
         CurrentLives--;
         if (Lives.text == "Lives: 1")
         {
-            Lives.text = "Lives: 0";
-            Time.timeScale = 0;
-            Basket.transform.position = new Vector3(0, -3.5f, 1);
-            Tree.transform.position = new Vector3(0, 2.5f, 0);
-            Lives.text = "Lives: 3";
-            script.Catch = 0;
+            SceneManager.LoadScene("End");
         }
         else if (Lives.text == "Lives: 2")
         {
