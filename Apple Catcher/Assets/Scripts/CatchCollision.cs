@@ -24,8 +24,6 @@ public class CatchCollision : MonoBehaviour
     {
         Egg.Play();
         Catch = Catch + 100;
-        print(collision.gameObject);
-        print("Nice Catch");
         Destroy(collision.gameObject);
     }
 }
