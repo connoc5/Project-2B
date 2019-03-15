@@ -25,7 +25,7 @@ public class TreeScript : MonoBehaviour
             Speed *= -1;
         }
 
-        if (transform.position.x > 10 || transform.position.x < -10)
+        if (transform.position.x > 7.5 || transform.position.x < -7.5)
         {
             Speed *= -1;
         }
