@@ -12,7 +12,7 @@ public class AppleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnObject", 2, 2);
+        InvokeRepeating("SpawnObject", 1,1.75f);
     }
 
     // Update is called once per frame

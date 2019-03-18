@@ -8,7 +8,7 @@ public class TreeScript : MonoBehaviour
     private float StartX = 0;
     private float StartY = 3f;
     public float Speed = 5f;
-    public float DirChangeChance = 0.025f;
+    public float DirChangeChance;
     #endregion
     // Start is called before the first frame update
     void Start()
