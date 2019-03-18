@@ -12,6 +12,8 @@ public class AppleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioSource ChickenSFX = GameObject.Find("ChickenAudio").GetComponent<AudioSource>();
+        Chicken = ChickenSFX;
         InvokeRepeating("SpawnObject", 1,1.75f);
     }
 

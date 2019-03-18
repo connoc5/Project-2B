@@ -13,7 +13,8 @@ public class CatchCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        AudioSource EggSFX = GameObject.Find("BasketAudio").GetComponent<AudioSource>();
+        Egg = EggSFX;
     }
     // Update is called once per frame
     void Update()
