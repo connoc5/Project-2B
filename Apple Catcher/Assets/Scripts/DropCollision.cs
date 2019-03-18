@@ -11,7 +11,7 @@ public class DropCollision : MonoBehaviour
     public GameObject Tree;
     public GameObject Basket;
     public CatchCollision script;
-    public AudioSource splat;
+    private AudioSource splat;
 
     public Text Lives;
     public int MaxLives = 3;
@@ -22,6 +22,9 @@ public class DropCollision : MonoBehaviour
     {
         Time.timeScale = 0;
         script = Basket.GetComponent<CatchCollision>();
+
+        AudioSource SplatSFX = GameObject.Find("SplatAudio").GetComponent<AudioSource>();
+        splat = SplatSFX;
     }
     // Update is called once per frame
     void Update()
