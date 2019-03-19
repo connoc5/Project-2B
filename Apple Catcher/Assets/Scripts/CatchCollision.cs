@@ -26,5 +26,6 @@ public class CatchCollision : MonoBehaviour
         Egg.Play();
         Catch = Catch + 100;
         Destroy(collision.gameObject);
+        PlayerPrefs.SetInt("CurrentScore", Catch);
     }
 }
